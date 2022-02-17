@@ -1070,16 +1070,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68bde955f8d348e4f8412e55d8cc3e7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  temporizador: {fileID: 0}
-  resultado: {fileID: 0}
+  velocidad: 30
   golesIzquierda: 0
   golesDerecha: 0
-  contadorIzquierda: {fileID: 0}
-  contadorDerecha: {fileID: 0}
-  audioGol: {fileID: 0}
-  audioRaqueta: {fileID: 0}
-  audioRebote: {fileID: 0}
-  velocidad: 30
+  audioGol: {fileID: 8300000, guid: 157a559c3d2af854783778579d9b2e09, type: 3}
+  audioRaqueta: {fileID: 8300000, guid: 86c9608f4d02c2e4d8ca19426dbf5b55, type: 3}
+  audioRebote: {fileID: 8300000, guid: cc8786471b82ec74597d2c8d2c7d15ec, type: 3}
+  contadorIzquierda: {fileID: 1610297946}
+  contadorDerecha: {fileID: 1737585623}
+  resultado: {fileID: 1756437977}
+  temporizador: {fileID: 1796409231}
 --- !u!82 &465326548
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1993,7 +1993,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -100, y: -10}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1610297946
@@ -2008,7 +2008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: cc11c9df09b99644cbb202d0709be58d, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2023,11 +2023,11 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 60
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 
 --- !u!222 &1610297947
@@ -2154,7 +2154,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 100, y: -10}
+  m_AnchoredPosition: {x: -1.2000122, y: -0.3999939}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1737585623
@@ -2169,8 +2169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: cc11c9df09b99644cbb202d0709be58d, type: 2}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2187,8 +2187,8 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 
 --- !u!222 &1737585624
@@ -2291,16 +2291,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68bde955f8d348e4f8412e55d8cc3e7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  temporizador: {fileID: 0}
-  resultado: {fileID: 0}
+  velocidad: 30
   golesIzquierda: 0
   golesDerecha: 0
-  contadorIzquierda: {fileID: 0}
-  contadorDerecha: {fileID: 0}
   audioGol: {fileID: 0}
   audioRaqueta: {fileID: 0}
   audioRebote: {fileID: 0}
-  velocidad: 30
+  contadorIzquierda: {fileID: 0}
+  contadorDerecha: {fileID: 0}
+  resultado: {fileID: 0}
+  temporizador: {fileID: 0}
 --- !u!1 &1764168427
 GameObject:
   m_ObjectHideFlags: 0
@@ -2313,6 +2313,7 @@ GameObject:
   - component: {fileID: 1764168428}
   - component: {fileID: 1764168430}
   - component: {fileID: 1764168431}
+  - component: {fileID: 1764168432}
   m_Layer: 0
   m_Name: Raqueta Derecha
   m_TagString: Untagged
@@ -2420,6 +2421,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 30
   eje: Vertical
+--- !u!61 &1764168432
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764168427}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.015625, y: 0.015625, z: 0.015625, w: 0.015625}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1796409228
 GameObject:
   m_ObjectHideFlags: 0
@@ -2431,7 +2458,6 @@ GameObject:
   - component: {fileID: 1796409229}
   - component: {fileID: 1796409232}
   - component: {fileID: 1796409231}
-  - component: {fileID: 1796409230}
   m_Layer: 5
   m_Name: Temporizador
   m_TagString: Untagged
@@ -2458,28 +2484,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -25}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 1}
---- !u!114 &1796409230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1796409228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68bde955f8d348e4f8412e55d8cc3e7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  temporizador: {fileID: 0}
-  resultado: {fileID: 0}
-  golesIzquierda: 0
-  golesDerecha: 0
-  contadorIzquierda: {fileID: 0}
-  contadorDerecha: {fileID: 0}
-  audioGol: {fileID: 0}
-  audioRaqueta: {fileID: 0}
-  audioRebote: {fileID: 0}
-  velocidad: 30
 --- !u!114 &1796409231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2507,7 +2511,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 45
-    m_Alignment: 4
+    m_Alignment: 7
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
@@ -2768,6 +2772,7 @@ GameObject:
   - component: {fileID: 2038781684}
   - component: {fileID: 2038781686}
   - component: {fileID: 2038781687}
+  - component: {fileID: 2038781688}
   m_Layer: 0
   m_Name: Raqueta Izquierda
   m_TagString: Untagged
@@ -2875,6 +2880,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 30
   eje: Vertical 2
+--- !u!61 &2038781688
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038781683}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.015625, y: 0.015625, z: 0.015625, w: 0.015625}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &2077629740
 GameObject:
   m_ObjectHideFlags: 0
